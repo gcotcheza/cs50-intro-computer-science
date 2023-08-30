@@ -25,7 +25,7 @@ int main(void)
         }
         while (population < end);
 
-        printf("Years: %i\n", year);
+        printf("Years: %i", year);
     }
 
     return 0;
