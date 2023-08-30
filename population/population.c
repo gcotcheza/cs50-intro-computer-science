@@ -19,7 +19,6 @@ int main(void)
     {
         do
         {
-
             population += (population / 3 - population / 4);
             year++;
         }
