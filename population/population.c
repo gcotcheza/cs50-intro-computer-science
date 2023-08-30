@@ -13,7 +13,7 @@ int main(void)
 
     if (start == end)
     {
-        printf("Years: %i", year);
+        printf("Years: %i\n", year);
     }
     else
     {
@@ -24,7 +24,7 @@ int main(void)
         }
         while (population < end);
 
-        printf("Years: %i", year);
+        printf("Years: %i\n", year);
     }
 
     return 0;
