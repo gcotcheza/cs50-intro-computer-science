@@ -1,8 +1,10 @@
 This playlist has valence average of 0.48443, energy average of 0.65906 and danceability average of 0.71646. I would characterize the audio aura of this listener as positive with moderate level of energy and a good potential for dancing or grooving to the music.
 It has a well-balance mix of music. It's not overly cheerful or energetic, but it's not too mellow either.
 
-Assessing the "audio aura" of a listener involves understanding their music preferences comprehensively.
-While Spotify relies on average valence, energy, and danceability, there are factors like shared account and shared playlist with another listener. The playlist may not solely consist of the listener's favorite tracks but can include
-songs curated for a particular occasion, location, shared with others or even songs from family members or friends. A more effective approach includes personalized machine learning models that can track listeners history, skipped/repeated tracks
- and contextual factors like time and location where he listen specific tracks (working time, holidays, free days or exercising ). Additionally, considering genre and artist preferences, collaborative filtering and
-explicit feedback and can provide a more nuanced understanding. Incorporating these methods allows for a personalized and accurate assessment of a listener's musical preferences, beyond simple audio features.
+
+Assessing the "audio aura" of a listener involves comprehensively understanding their music preferences.
+ While Spotify relies on average valence, energy, and danceability, there are additional factors to consider, such as shared accounts and playlists with other listeners.
+ The playlist may not exclusively consist of the listener's favorite tracks; it can include songs curated for specific occasions, locations, or shared with others, even coming from family members or friends.
+ A more effective approach includes personalized machine learning models that track the listener's history, skipped/repeated tracks, and contextual factors like time and location where specific tracks are played (e.g., during work, holidays, free days, or exercising).
+ Additionally, considering genre and artist preferences, collaborative filtering, and explicit feedback can provide a more nuanced understanding.
+ Incorporating these methods allows for a personalized and accurate assessment of a listener's musical preferences, surpassing simple audio features.
