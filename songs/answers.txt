@@ -3,7 +3,7 @@ It has a well-balance mix of music. It's not overly cheerful or energetic, but i
 
 Assessing the "audio aura" of a listener involves understanding their music preferences comprehensively.
 While Spotify relies on average valence, energy, and danceability, there are factors like shared account and shared playlist with another listener. The playlist may not solely consist of the listener's favorite tracks but can include
-songs curated for a particular occasion, location, shared with others or even songs from family members or friends. A more effective approach includes personalized machine learning models,
-NLP for textual feedback analysis, and contextual factors like time and location. Additionally, considering genre and artist preferences, collaborative filtering,
+songs curated for a particular occasion, location, shared with others or even songs from family members or friends. A more effective approach includes personalized machine learning models that can track listeners history, skipped/repeated tracks
+ and contextual factors like time and location where he listen specific tracks (working time, holidays, free days or exercising ). Additionally, considering genre and artist preferences, collaborative filtering,
 explicit feedback, multimodal data, and affective computing techniques can provide a more nuanced understanding.
-Incorporating these methods allows for a personalized and accurate assessment of a listener's musical preferences, beyond simple audio features. 
+Incorporating these methods allows for a personalized and accurate assessment of a listener's musical preferences, beyond simple audio features.
