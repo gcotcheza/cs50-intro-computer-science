@@ -1,2 +1,2 @@
-Based on the valence average of 0.48443, energy avergae of 0.65906 and danceability average of 0.71646, i would characterize the audio aura of this listener as positive with moderate level of energy and a good potentical for dancing or grooving to the music. It has a well-balance
-mix of music. It's not overly cheerful or energetic, but it's not too mellow either. 
+This playlist has valence average of 0.48443, energy average of 0.65906 and danceability average of 0.71646. I would characterize the audio aura of this listener as positive with moderate level of energy and a good potential for dancing or grooving to the music.
+It has a well-balance mix of music. It's not overly cheerful or energetic, but it's not too mellow either.
