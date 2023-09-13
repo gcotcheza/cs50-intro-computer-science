@@ -22,6 +22,10 @@
 --  check the passengers of the earliest possible flight;
     select * from passengers where flight_id  = (select  f.id from flights as f join airports as a on f.origin_airport_id = a.id where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29
         order by hour limit 1);
+-- Get all the name of the passengers on the earliest flight:
+    select p.name from people as p join passengers as ps on p.passport_number = ps.passport_number where flight_id  = (select  f.id from flights as f join airports as a on f.origin_airport_id = a.id
+        where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour limit 1);
+
 
 
 
