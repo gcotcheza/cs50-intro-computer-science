@@ -19,7 +19,7 @@
    select * from phone_calls where year = 2021 and month = 7 and day = 28 and duration < 60 ;
 -- check the earliest flight leaving fiftyville on 29 of july 22021;
     select * from flights as f join airports as a on f.origin_airport_id = a.id where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour;
--- 
+--  check the passengers of the earliest possible flight; 
 
 
 
