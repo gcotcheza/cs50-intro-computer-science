@@ -30,7 +30,8 @@
 -- Combine the last two queries to find out the accomplice:
     select p.name from people as p join passengers as ps on p.passport_number = ps.passport_number  where flight_id  = (select  f.id from flights as f join airports as a on f.origin_airport_id = a.id
     where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour limit 1) and p.phone_number in (select receiver from phone_calls where year = 2021 and month = 7 and day = 28 and duration < 60);
---
+-- Find out the destination city of the flight the thef had taken:
+    select city from airports where id = (select f.destination_airport_id from flights as f join airports as a on f.origin_airport_id = a.id where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour limit 1);
 
 
 
