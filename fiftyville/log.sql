@@ -5,5 +5,10 @@
     select description from crime_scene_reports where month = 7 and day = 28 and street = "Humphrey Street";
 -- Check the all the transcript from interview table that contains/ mentions bakery.
     select * from interviews where transcript like '%bakery%';
--- Check the security footage
-    
+-- Check the bakery_security_logs:
+    select * from bakery_security_logs limit 10;
+-- Check different activity because the witness said something about leaving the parking area at a certain time.
+    select distinct(activity) from bakery_security_logs;
+-- Check
+
+
