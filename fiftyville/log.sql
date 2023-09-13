@@ -9,6 +9,8 @@
     select * from bakery_security_logs limit 10;
 -- Check different activity because the witness said something about leaving the parking area at a certain time.
     select distinct(activity) from bakery_security_logs;
--- Check
+-- Check the license plates of car who left the parking between 10:15 and 10:25;
+    select * from bakery_security_logs where activity = "exit" and month = 7 and day = 28 and hour = 10 and minute between 15 and 25;
+
 
 
