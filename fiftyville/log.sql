@@ -33,9 +33,11 @@
 -- Find out the destination city of the flight the thef had taken:
     select city from airports where id = (select f.destination_airport_id from flights as f join airports as a on f.origin_airport_id = a.id where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour limit 1);
 -- Looking for the thief
-    select p.name from people as p join passengers as ps on p.passport_number = ps.passport_number  where flight_id  = (select  f.id from flights as f join airports as a on f.origin_airport_id = a.id where a.city = "Fiftyville" and year = 2021 and month = 7 and day = 29 order by hour limit 1)
-    and p.phone_number in (select caller from phone_calls where year = 2021 and month = 7 and day = 28 and duration < 60)
-    and p.license_plate in (select license_plate from bakery_security_logs where activity = "exit" and month = 7 and day = 28 and hour = 10 and minute between 15 and 25);
+   SELECT p.name FROM people AS p JOIN passengers AS ps ON p.passport_number=ps.passport_number
+   WHERE flight_id=(SELECT f.id FROM flights AS f JOIN airports AS a ON f.origin_airport_id=a.id
+   WHERE a.city="Fiftyville" AND year=2021 AND month=7 AND day=29 ORDER BY hour LIMIT 1)
+   AND p.phone_number in(SELECT caller FROM phone_calls WHERE year=2021 AND month=7 AND day=28 AND duration<60)
+   AND p.license_plate in(SELECT license_plate FROM bakery_security_logs WHERE activity="exit" AND month=7 AND day=28 AND hour=10 AND minute BETWEEN 15 AND 25);
 
 
 
