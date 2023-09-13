@@ -15,6 +15,7 @@
     select * from atm_transactions limit 10;
 -- check all the withdrawal transactions on that day before 10:15 am at Legget Street;
     select * from atm_transactions where atm_location = "Leggett Street" and transaction_type = "withdraw" and month = 7 and day = 28 and year = 2021;
+-- Check phonecall around that time:
 
 
 
