@@ -1,3 +1,6 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
--- Find crime scene description
-    
+-- See how it looks the rows and data on the crime_scene_reports:
+   select * from crime_scene_reports;
+-- Find specific crime scene description:
+    sel
+
