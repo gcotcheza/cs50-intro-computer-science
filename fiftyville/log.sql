@@ -45,6 +45,7 @@
         AND p.phone_number in(SELECT caller FROM phone_calls WHERE year=2021 AND month=7 AND day=28 AND duration<60)
         AND p.license_plate in(SELECT license_plate FROM bakery_security_logs WHERE activity="exit" AND month=7 AND day=28 AND hour=10 AND minute BETWEEN 15 AND 25)
         AND ba.account_number in(SELECT account_number FROM atm_transactions WHERE atm_location="Leggett Street" AND transaction_type="withdraw" AND month=7 AND day=28 AND year=2021);
+-- And that's it! i found the thief!
 
 
 
