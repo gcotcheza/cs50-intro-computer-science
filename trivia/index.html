@@ -11,7 +11,8 @@
                 const correctAnswer = "option3";
                 const multipleChoiceForm = document.getElementById('multiple_choice');
                 const optionButtons = multipleChoiceForm.querySelectorAll('button[type="submit"]');
-                let previousButton = null; 
+                let previousButton = null;
+                const resultMessageElement = document.getElementById('result-message');
 
                 optionButtons.forEach(function(button) {
                     button.addEventListener('click', function(e) {
@@ -20,6 +21,10 @@
                         if (previousButton) {
                             // Reset the color of the previous button
                             previousButton.style.backgroundColor = '';
+                        }
+                        if (resultMessageElement) {
+                            // Reset the result message
+                            resultMessageElement.textContent = '';
                         }
 
                         if (button.id === correctAnswer) {
