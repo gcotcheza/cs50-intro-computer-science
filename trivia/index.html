@@ -36,15 +36,14 @@
                             button.style.backgroundColor = 'red';
                             showResultMessage('Incorrect', 'incorrect-message');
                         }
-
                         previousButton = button; // Update the previousButton
                     });
                 });
 
                 function showResultMessage(message, messageId) {
-                    const resultMessageElement = document.getElementById(messageId);
-                    if (resultMessageElement) {
-                        resultMessageElement.textContent = message;
+                    const messageElement = document.getElementById(messageId);
+                    if (messageElement) {
+                        messageElement.textContent = message;
                     } else {
                         const section = document.querySelector('.section');
                         const messageElement = document.createElement('p');
