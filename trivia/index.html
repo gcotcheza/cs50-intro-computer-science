@@ -7,17 +7,40 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <title>Trivia!</title>
         <script>
-
             document.addEventListener('DOMContentLoaded', function() {
+                let correctAnswer = "option3";
+                let multipleChoiceForm = document.getElementById('multiple_choice');
+                let optionButtons = multipleChoiceForm.querySelectorAll('button[type="submit"]');
 
-                let var = document.getElementById('option')
-                let answer = document.querySelector(#option3)
-                document.querySelector('multiple_choice').addEventListener('click', function(e) {
-                    alert('hello');
-                    e.preventDefault();
+                optionButtons.forEach(function(button) {
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+
+                        if (button.id === correctAnswer) {
+                            // Correct answer clicked
+                            button.style.backgroundColor = 'green';
+                            showResultMessage('Correct!', 'correct-message');
+                        } else {
+                            // Incorrect answer clicked
+                            button.style.backgroundColor = 'red';
+                            showResultMessage('Incorrect', 'incorrect-message');
+                        }
+                    });
                 });
-            });
 
+                function showResultMessage(message, messageId) {
+                    const resultMessageElement = document.getElementById(messageId);
+                    if (resultMessageElement) {
+                        resultMessageElement.textContent = message;
+                    } else {
+                        const section = document.querySelector('.section');
+                        const messageElement = document.createElement('p');
+                        messageElement.textContent = message;
+                        messageElement.id = messageId;
+                        section.appendChild(messageElement);
+                    }
+                }
+            });
         </script>
     </head>
     <body>
