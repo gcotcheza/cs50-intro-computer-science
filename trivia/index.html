@@ -8,13 +8,19 @@
         <title>Trivia!</title>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                let correctAnswer = "option3";
-                let multipleChoiceForm = document.getElementById('multiple_choice');
-                let optionButtons = multipleChoiceForm.querySelectorAll('button[type="submit"]');
+                const correctAnswer = "option3";
+                const multipleChoiceForm = document.getElementById('multiple_choice');
+                const optionButtons = multipleChoiceForm.querySelectorAll('button[type="submit"]');
+                let previousButton = null; 
 
                 optionButtons.forEach(function(button) {
                     button.addEventListener('click', function(e) {
                         e.preventDefault();
+
+                        if (previousButton) {
+                            // Reset the color of the previous button
+                            previousButton.style.backgroundColor = '';
+                        }
 
                         if (button.id === correctAnswer) {
                             // Correct answer clicked
@@ -25,6 +31,8 @@
                             button.style.backgroundColor = 'red';
                             showResultMessage('Incorrect', 'incorrect-message');
                         }
+
+                        previousButton = button; // Update the previousButton
                     });
                 });
 
