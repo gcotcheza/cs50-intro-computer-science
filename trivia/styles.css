@@ -32,6 +32,11 @@ body {
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
+.option {
+    margin: 6px;
+    border-radius: 
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
