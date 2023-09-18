@@ -36,7 +36,7 @@ body {
     margin: 6px;
 }
 
-.option:hover{
+button:hover{
     background-color: #a6d5ff;
 }
 
