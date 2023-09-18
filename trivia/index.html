@@ -9,8 +9,8 @@
         <script>
 
             document.addEventListener('DOMContentLoaded', function() {
-                document.querySelector('form').addEventListener('submit', function(e) {
-                    alert('hello, ' + document.querySelector('#name').value);
+                document.querySelector('multiple_choice').addEventListener('submit', function(e) {
+                    alert('hello');
                     e.preventDefault();
                 });
             });
@@ -27,28 +27,30 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <h3>What is the historical background behind the selection of Tux, the penguin, as the official mascot of Linux?</h3>
-                <div class="d-flex justify-content-start">
-                    <div class="option">
-                        <button type="submit" id="option1">Because Linus Torvald had a pet penguin</button>
-                    </div>
+                <form id="multiple_choice">
+                    <div class="d-flex justify-content-start">
+                        <div class="option">
+                            <button type="submit" id="option1">Because Linus Torvald had a pet penguin</button>
+                        </div>
 
-                    <div class="option">
-                        <button type="submit" id="option2">The Linux community voted for a penguin as mascot</button>
-                    </div>
+                        <div class="option">
+                            <button type="submit" id="option2">The Linux community voted for a penguin as mascot</button>
+                        </div>
 
-                    <div class="option">
-                        <button type="submit" id="option3">Linus Torvald was bitten by a penguin</button>
+                        <div class="option">
+                            <button type="submit" id="option3">Linus Torvald was bitten by a penguin</button>
 
-                    </div>
+                        </div>
 
-                    <div class="option">
-                        <button type="submit" id="option4">Inspired by a cartoon character</button>
-                    </div>
+                        <div class="option">
+                            <button type="submit" id="option4">Inspired by a cartoon character</button>
+                        </div>
 
-                    <div class="option">
-                        <button type="submit" id="option5">It was a random choice by the Linux development team</button>
+                        <div class="option">
+                            <button type="submit" id="option5">It was a random choice by the Linux development team</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div class="section">
