@@ -36,6 +36,10 @@ body {
     margin: 6px;
 }
 
+.option:hover{
+    
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
